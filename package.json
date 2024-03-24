@@ -1,0 +1,17 @@
+{
+  "name": "template-hono-reactjs-vite",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently npm:dev:*"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
